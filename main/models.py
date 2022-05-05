@@ -7,7 +7,7 @@ class Article(models.Model):
     """
     name = models.CharField(max_length=255, blank=True, null=True)
     views = models.CharField(max_length=255, blank=True, null=True)
-    link = models.URLField()
+    link = models.URLField(unique=True)
     last_update = models.DateTimeField(auto_now=True)
 
     def __str__(self) -> str:
