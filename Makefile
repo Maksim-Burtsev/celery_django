@@ -9,3 +9,10 @@ shell:
 
 su:
 	python manage.py createsuperuser
+
+test:
+
+	python manage.py test
+
+req:
+	pip3 freeze >  requirements.txt
